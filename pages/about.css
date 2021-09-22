@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+@font-face {
+    font-family: 'baskerville';
+    src: url(./fonts/BASKVILL.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    height: 763px;
+    background-image: url('../img/about-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header > nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+nav > .logo {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .navigation {
+    width: 50%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation > .upper__navigation {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+
+.navigation > .upper__navigation > span {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.navigation > .upper__navigation > span a{
+    color: #000;
+}
+
+
+.nav__btns button:first-child{
+    width: 127px;
+    height: 41px;
+    border: 0.5px solid #000;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;  
+    margin: 0 20px;
+} 
+
+.nav__btns button:last-child {
+    width: 180px;
+    height: 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: #BC2222;
+    color: #fff;
+}
+
+.down__navigation {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.down__navigation > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.down__navigation ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.header__text {
+    color: #fff;
+    font-size: 220px;
+    font-family: 'baskerville';
+    font-weight: 100;
+    position: absolute;
+    top: 341px;
+    left: 370px;
+}
+
+
+
+.preserving__past {
+    width: 1565px;
+    height: 702px;
+    background-color: #fff;
+    position: absolute;
+    top: 599px;
+    left: 284px;
+    z-index: 999;
+    -webkit-box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35); 
+box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
+
+}
+
+.preserving__wrapper {
+    width: 880px;
+    height: 526px;
+    position: relative;
+    padding-top: 89px;
+    padding-left: 88px;
+}
+
+.preserving__wrapper h1 {
+    font-size: 64px;
+    font-family: 'Baskerville', sans-serif;
+    font-weight: 100;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #1b1b1b;
+    margin: 22px 0 40px 0;
+}
+
+.preserving__wrapper p {
+    width: 780px;
+    height: 400px;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about__top {
+    width: 649px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    top: 340px;
+    
+}
+
+
+.main {
+    width: 100%;
+    height: 5572px;
+    position: relative;
+    background: url('../img/background\ map.png');
+    background-color: #fff;
+
+}
+
+
+
+.our__mission {
+    width: 1266px;
+    height: 562px;
+    position: absolute;
+    left: 254px;
+    top: 615px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission__text {
+    width: 780px;
+    height: 328px;
+}
+
+.mission__text h1 {
+    font-size: 64px;
+    font-family: 'Baskerville';
+    font-weight: 100;
+}
+
+.mission__text p {
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.new__foundation {
+    width: 100%;
+    height: 504px;
+    background: #A1A77C;
+    position: absolute;
+    top: 1274px;
+    padding: 90px 470px 106px 470px;
+}
+
+.new__foundation p {
+    text-align: center;
+    width: 980px;
+    height: 308px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.our__team {
+    width: 980px;
+    height: 970px;
+    position: absolute;
+    top: 1898px;
+    left: 470px;
+}
+
+.our__team > h1 {
+    font-size: 64px;
+    font-family: 'Baskerville';
+    font-weight: 100;
+    text-align: center;
+}
+
+.team__row {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.team__element {
+    width: 280px;
+    height: 318px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team__element h1 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-family: 'Baskerville', sans-serif;
+    font-weight: 100;
+}
+
+.team__element p {
+    font-size: 18px;
+}
+
+.accordion {
+    max-width: 280px;
+}
+
+.accordion .contentBx {
+    position: relative;
+    margin: 10px 20px;
+}
+
+.accordion .contentBx .label {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    color: #A1A77C;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.accordion .contentBx .content {
+    position: relative;
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.accordion .contentBx.active .content {
+    text-align: center;
+    height: 352px;
+    width: 280px;
+    padding: 10px;
+    background: #fff;
+}
+
+.our__involvement {
+    width: 100%;
+    height: 1540px;
+    background: url('../img/our-involvement.png');
+    position: absolute;
+    bottom: 717px;
+}
+
+.partners__wrapper {
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    bottom: 237px;
+    background-color: #fff;
+}
+
+
+.partners {
+    width: 1180px;
+    height: 274px;
+    position: absolute;
+    bottom: 100px;
+    left: 370px;  
+}
+
+.partners h1 {
+    font-size: 64px;
+    color: #1b1b1b;
+    font-family: 'baskerville';
+    font-weight: 100;
+    text-align: center;
+}
+
+.partners > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    height: 237px;
+    background: #1B1B1B;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.footer__privacy {
+    text-align: right;
+    line-height: 2;
+}
+
+.footer__privacy a {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1375px) {
+    html, body {
+        width: 1370px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        overflow-x: hidden;
+    }
+ 
+    .logo {
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .logo img {
+        position: absolute;
+        left: 100px;
+        top: 29px;
+    }
+
+    .upper__navigation span {
+        margin-left: -25px;
+    }
+ 
+     .navigation  .upper__navigation {
+         width: 100%;
+    }
+
+    .down__navigation {
+        width: 100%;    
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .down__navigation ul {
+        width: 580px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__text {
+        width: 1375px;
+        left: 95px;
+    }
+
+    .preserving__past {
+        left: 0;
+    }
+
+    .our__mission {
+        left: 0;
+    }
+
+    .new__foundation {
+        padding: 90px 194px 83px 194px;
+    }
+
+    .our__team {
+        left: 194px;
+    }
+
+    .our__involvement {
+        background-image: url('../img/Group\ 198.png');
+    }
+    
+    .partners {
+        left: 94px;
+    }
+
+    footer .footer__copyright {
+        position: absolute;
+        left: 94px;
+    }
+    
+    footer .footer__privacy {
+        position: absolute;
+        right: 95px;
+    }
+}

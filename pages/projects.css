@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'baskerville';
+    src: url(../fonts/BASKVILL.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+header {
+    width: 100vw;
+    height: 816px;
+    background-image: linear-gradient(#1b1b1baf, #00000000), url('../img/projects-bg.png');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header > nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+nav > .logo {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+nav > .navigation {
+    width: 50%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation > .upper__navigation {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.navigation > .upper__navigation > span {
+    font-size: 14px;
+    margin-left: 60px;
+}
+
+.navigation > .upper__navigation > span a{
+    color: #000;
+}
+
+.nav__btns {
+    margin-left: 100px;
+    display: flex;
+}
+
+.nav__btns button:first-child{
+    width: 127px;
+    height: 41px;
+    border: 0.5px solid #000;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;  
+    margin: 0 20px;
+    font-size: 14px;
+} 
+
+.nav__btns button:last-child {
+    width: 180px;
+    height: 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: #BC2222;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.down__navigation {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.down__navigation > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.down__navigation ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.header__text {
+    width: 1180px;
+    height: 284px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 278px;
+    left: 375px;
+}
+
+.header__text h1 {
+    font-size: 220px;
+    color: #fff;
+    font-family: 'baskerville';
+    font-weight: 400;
+}
+.header__text ul {
+    margin-top: 20px;
+    line-height: 2;
+
+}
+
+.header__text ul li a {
+    font-size: 21px;
+    color: #fff;
+}
+
+.header__more {
+    width: 950px;
+    height: 280px;
+    background-color: #fff;
+    position: absolute;
+    top: 650px;
+    right: 0;
+    padding-top: 60px;
+    padding-left: 64px;
+    padding-right: 368px;
+    padding-bottom: 55px;
+    z-index: 9999;
+    -webkit-box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35); 
+box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
+}
+
+.header__more p {
+    width: 555px;
+    height: 175px;
+    font-size: 19px;
+}
+
+.header__button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 480px;
+    height: 60px;
+    margin-left: 80px;
+
+}
+
+.header__more button {
+    width: 180px;
+    height: 41px;
+    background-color: #1B1B1B;
+    border-radius: 30px;
+    margin-bottom: 0px;
+}
+
+.header__more button a {
+    color: #fff;
+}
+
+.main {
+    width: 100%;
+    height: calc(4459px - 816px);
+    background-color: #fff;
+    position: relative;
+    font-family: 'baskerville';
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.experinces {
+    width: 1180px;
+    height: 1002px;
+    position: absolute;
+    top: 218px;
+    left: 370px;
+}
+
+.experiences__wrapper {
+    width: 1180px;
+    height: 1002px;
+    position: relative;
+}
+
+.experiences__wrapper h1 {
+    font-size: 64px;
+    text-align: center;
+    font-family: 'baskerville';
+    font-weight: 100;
+    
+}
+
+.experiences__wrapper .main__access {
+    width: 480px;
+    height: 234px;
+    position: absolute;
+    top: 410px;
+    left: 0;
+}
+
+.experiences__wrapper .main__access h1,
+.main__participation h1,
+.main__perspective  h1,
+.main__passion h1{
+    font-size: 64px;
+    text-align: left;
+}
+
+.line {
+    width: 100%;
+    background-color: #1B1B1B;
+    height: 2px;
+    margin: 20px 0;
+}
+
+
+.experiences__wrapper .main__access p,
+.main__participation p,
+.main__perspective p,
+.main__passion p {
+    font-size: 21px;
+}
+
+.experiences__wrapper .main__participation {
+    width: 478px;
+    height: 209px;
+    position: absolute;
+    right: 0;
+    top: 558px;
+}
+
+
+.main__perspective {
+    width: 480px;
+    height: 209px;
+    position: absolute;
+    top: 717px;
+    left: 0;
+}
+
+.main__passion {
+    width: 476px;
+    height: 209px;
+    position: absolute;
+    top: 862px;
+    right: 0;
+}
+
+#carouselExampleFade {
+    position: absolute;
+    top: 1350px;
+    left: 370px;
+}
+
+.education__membership {
+    width: 100%;
+    height: 706px;
+    background-color: #292929;
+    position: absolute;
+    bottom: 848px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.education__wrapper h1 {
+    font-size: 64px;
+}
+
+.education__membership p {
+    width: 1180px;
+    height: 325px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 21px;
+}
+
+.education__membership button {
+    position: absolute;
+    top: 666px;
+    right: 320px;
+    width: 380px;
+    height: 80px;
+    background-color: #BC2222;
+    font-size: 24px;
+    border-radius: 40px;
+    border: 0;
+}
+
+.education__membership button a{
+    color: #fff;
+}
+
+.navigation__projects {
+    position: absolute;
+    bottom: 622px;
+    left: 374px;
+    line-height: 2;
+}
+
+.navigation__projects li a {
+    color: #1B1B1B;
+    font-size: 21px;
+}
+
+
+.line1 {
+    width: 1182px;
+    height: 3px;
+    background: url(../assets/Vector\ 25.png);
+    position: absolute;
+    bottom: 592px;
+    left: 405px;
+    right: 368px;
+    margin-bottom: 10px;
+}
+
+
+.help__cause {
+    width: 1182px;
+    height: 255px;
+    position: absolute;
+    bottom: 348px;
+    left: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'baskerville';
+    font-weight: 400;
+}
+
+.help__cause h1 {
+    font-size: 64px;
+    color: #1B1B1B;
+    margin-bottom: 30px;
+}
+
+.help__cause p {
+    font-size: 21px;
+    color: #1B1B1B;
+}
+
+
+.help__donation button {
+    width: 380px;
+    height: 80px;
+    background: #BC2222;
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.help__donation button a {
+    color: #fff;
+}
+
+.help__donation ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    height: 237px;
+    background: #1B1B1B;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.footer__privacy {
+    text-align: right;
+    line-height: 2;
+}
+
+
+.footer__privacy a {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1375px) {
+    html, body {
+        width: 1370px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        overflow-x: hidden;
+    }
+ 
+    .logo {
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .logo img {
+        position: absolute;
+        left: 0;
+        top: 29px;
+    }
+
+    .upper__navigation span {
+        margin-left: 10px;
+    }
+ 
+     .navigation  .upper__navigation {
+         width: 100%;
+    }
+
+    .down__navigation {
+        width: 100%;    
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .down__navigation ul {
+        width: 560px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__text {
+        width: 1375px;
+        left: 95px;
+    }
+
+    .header__text ul {
+        margin-right: 220px;
+    }
+
+    .header__more {
+        left: 694px;
+    }
+
+    .main .experinces,
+    #carouselExampleFade {
+        left: 94px;
+    }
+
+    .education__membership button {
+        left: 898px;
+    }
+
+    .main .navigation__projects {
+        width: 280px;
+        height: 97px;
+        left: 66px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    
+
+    .main .help__cause {
+        left: 96px;
+    }
+
+
+} 

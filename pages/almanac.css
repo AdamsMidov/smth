@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+@font-face {
+    font-family: 'baskerville';
+    src: url(./fonts/BASKVILL.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+header {
+    width: 100%;
+    height: 763px;
+    background-image: url('../img/almanac.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+header > nav {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+nav > .logo {
+    width: 50%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .navigation {
+    width: 50%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation > .upper__navigation {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+
+.navigation > .upper__navigation > span {
+    margin-left: 45px;
+    font-size: 14px;
+}
+
+.navigation > .upper__navigation > span a{
+    color: #000;
+}
+
+
+.nav__btns button:first-child{
+    width: 127px;
+    height: 41px;
+    border: 0.5px solid #000;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;  
+    margin: 0 20px;
+    font-size: 14px;
+
+} 
+
+.nav__btns button:last-child {
+    width: 180px;
+    height: 40px;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    background-color: #BC2222;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.down__navigation {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 15px;
+}
+
+.down__navigation > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.down__navigation ul li a {
+    color: #000;
+    font-size: 14px;
+}
+
+.header__text {
+    color: #fff;
+    font-size: 220px;
+    font-family: 'baskerville';
+    font-weight: 100;
+    position: absolute;
+    top: 330px;
+    left: 370px;
+}
+
+.main {
+    width: 100%;
+    height: 7123px;
+    position: relative;
+}
+
+.resideces {
+    width: 1182px;
+    height: 2089px;
+    position: absolute;
+    top: 96px;
+    left: 370px;
+}
+
+.residences__text {
+    width: 1180px;
+    height: 989px;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.residences__text h1 {
+    font-size: 64px;
+    font-family: 'baskerville';
+    font-weight: 100;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background: #1b1b1b;
+    margin: 50px 0;
+}
+
+.residences__text p {
+    font-size: 19px;
+    font-family: 'baskerville';
+    font-weight: 100;
+}
+
+.exhibition {
+    width: 100%;
+    height: 438px;
+    background: #bcc19e;
+    position: absolute;
+    top: 2280px;
+    padding-top: 100px;
+    padding-left: 372px;
+}
+
+.exhibition h1 {
+    font-size: 48px;
+}
+
+.line__and__btn {
+    width: 1182px;
+    display: flex;
+}
+.exhibition p {
+    width: 880px;
+    font-size: 19px;
+}
+
+.additional__info {
+    width: 1182px;
+    height: 2238px;
+    position: absolute;
+    top: 2792px;
+    left: 370px;
+}
+
+.additional__info__text {
+    width: 1180px;
+    height: 664px;
+    margin-top: 120px;
+}
+
+.additional__info__text h1 {
+    font-size: 64px;
+    font-family: 'baskerville', sans-serif;
+    font-weight: 100;
+    text-align: center;
+
+}
+
+.additional__info__text p {
+    color: #1b1b1b;
+    font-size: 17px;
+}
+
+.ptz {
+    width: 100%;
+    height: 438px;
+    background: #bcc19e;
+    position: absolute;
+    bottom: 1550px;
+    padding-top: 100px;
+    padding-left: 372px;
+}
+
+.ptz h1 {
+    font-size: 48px;
+}
+
+.line__and__btn {
+    width: 1182px;
+    display: flex;
+    align-items: center;
+}
+
+.line__and__btn button {
+    width: 180px;
+    height: 41px;
+    border: 0;
+    background: #1b1b1b;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+.line__and__btn button a {
+    color: #fff;
+
+}
+
+.ptz p {
+    width: 880px;
+    font-size: 19px;
+}
+
+
+.social__life {
+    width: 1182px;
+    height: 1086px;
+    position: absolute;
+    bottom: 369px;
+    left: 370px;
+    background: url('../img/social-life.png');
+}
+
+
+footer {
+    width: 100%;
+    height: 237px;
+    background: #1B1B1B;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__wrapper {
+    position: relative;
+}
+
+
+.footer__privacy {
+    text-align: right;
+    line-height: 2;
+}
+
+.footer__privacy a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1375px) {
+    html, body {
+        width: 1370px;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        overflow-x: hidden;
+    }
+ 
+    .logo {
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    .logo img {
+        position: absolute;
+        left: 100px;
+        top: 29px;
+    }
+
+    .upper__navigation span {
+        margin-left: 20px;
+    }
+ 
+     .navigation  .upper__navigation {
+         width: 100%;
+    }
+
+    .down__navigation {
+        width: 100%;    
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .down__navigation ul {
+        width: 580px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__text {
+        width: 1375px;
+        left: 95px;
+    }
+
+    .resideces,
+    .additional__info,
+    .social__life {
+        left: 94px;
+    }
+
+    .exhibition,
+    .ptz {
+        padding-left: 94px;
+    }
+
+    footer .footer__copyright {
+        position: absolute;
+        left: 94px;
+    }
+    footer .footer__privacy {
+        position: absolute;
+        right: 95px;
+    }
+}
