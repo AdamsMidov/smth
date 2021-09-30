@@ -47,20 +47,20 @@ nav > .navigation {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
 }
 
 .navigation > .upper__navigation {
     height: 50%;
-    width: 70%;
+    width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 25px;
+
 }
 
-
 .navigation > .upper__navigation > span {
-    margin-left: 45px;
     font-size: 14px;
 }
 
@@ -69,9 +69,11 @@ nav > .navigation {
 }
 
 .nav__btns {
-    margin-left: 90px;
-}
+    margin-left: 100px;
+    display: flex;
+    font-size: 14px;
 
+}
 
 .nav__btns button:first-child{
     width: 127px;
@@ -80,11 +82,9 @@ nav > .navigation {
     border-radius: 30px;
     outline: none;
     cursor: pointer;
-    background-color: transparent;  
+    background-color: transparent;
     margin: 0 20px;
-    font-size: 14px;
-
-} 
+}
 
 .nav__btns button:last-child {
     width: 180px;
@@ -93,31 +93,36 @@ nav > .navigation {
     border-radius: 30px;
     outline: none;
     cursor: pointer;
-    background-color: #BC2222;
+    background-color: #a1a77c;
     color: #fff;
-    font-size: 14px;
+    transition:all 0.25s ease-in-out;
+}
 
+.nav__btns button:last-child:hover {
+    background: #bc2222;
 }
 
 .down__navigation {
     height: 50%;
-    width: 70%;
+    width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-left: 15px;
+    margin-left: -30px;
 }
 
 .down__navigation > ul {
-    width: 100%;
+    height: 50px;
+    width: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.down__navigation ul li a {
+.down__navigation > ul > li > a {
     color: #000;
     font-size: 14px;
 }
+
 
 .header__text {
     width: 1180px;
@@ -126,9 +131,8 @@ nav > .navigation {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 258px;
-    left: 375px;
-    
+    top: 278px;
+    left: 250px;
 }
 
 .header__text h1 {
@@ -137,16 +141,21 @@ nav > .navigation {
     font-family: 'baskerville';
     font-weight: 400;
 }
+
 .header__text ul {
     margin-top: 20px;
     line-height: 2;
-    position: relative;
 }
 
 .header__text ul li a {
     font-size: 21px;
     color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
+
+
 .header__text ul li:nth-child(2) {
     position: relative;
 }
@@ -168,15 +177,15 @@ nav > .navigation {
     position: absolute;
     top: 650px;
     right: 0;
-    padding: 35px;
-    padding-left: 100px;
+    padding: 45px;
+    padding-left: 60px;
     z-index: 9999;
     -webkit-box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35); 
 box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
 }
 
 .header__more p {
-    width: 560px;
+    width: 660px;
     height: 175px;
     font-size: 21px;
 }
@@ -188,14 +197,22 @@ box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
     width: 480px;
     height: 60px;
     margin-left: 100px;
+    position: relative;
+    bottom: 10px;
 }
 
 .header__more button {
     width: 180px;
     height: 41px;
-    background-color: #1B1B1B;
+    background-color: #A1A77C;
     border-radius: 30px;
     margin-bottom: 15px;
+    border: 0;
+    transition: .25s ease-in-out all;
+}
+
+.header__more button:hover {
+    background: #1B1B1B;
 }
 
 .header__more button a {
@@ -259,13 +276,15 @@ box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
     position: absolute;
     top: 912px;
     left: 370px;
-    -webkit-box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35); 
-    box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
+    /*-webkit-box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35); */
+    /*box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);*/
 }
 
 .double__img__info p {
     font-family: 'raleway';
     font-size: 21px;
+    font-style: italic;
+
 }
 
 .house__info {
@@ -274,13 +293,17 @@ box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
     background-color: #fff;
     position: absolute;
     top: 1833px;
-    padding: 111px 470px;
+    padding-top: 80px;
     
 }
 
 .house__info p {
+    width: 950px;
     font-size: 21px;
     font-family: 'raleway', sans-serif;
+    position: absolute;
+    left: 470px;
+    font-style: italic;
 }
 
 #carouselExampleFade {
@@ -371,6 +394,12 @@ box-shadow: -9px 9px 15px -4px rgba(27,27,27,0.35);
     font-size: 24px;
     cursor: pointer;
     margin-bottom: 30px;
+    transition: .25s ease-in-out all;
+}
+
+
+.help__donation button:hover {
+    background: #A1A77C;
 }
 
 .help__donation button a {

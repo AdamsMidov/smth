@@ -47,33 +47,38 @@ nav > .logo {
     align-items: center;
 }
 
+
 nav > .navigation {
     width: 50%;
     height: 150px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
 }
 
 .navigation > .upper__navigation {
     height: 50%;
-    width: 70%;
+    width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 25px;
+
 }
 
-.navigation > .upper__navigation > .lang__pref {
-    margin-left: 10px;
-}
-
-
-.navigation > .upper__navigation > .lang__pref a{
-    color: #000;
+.navigation > .upper__navigation > p {
     font-size: 14px;
 }
 
+.navigation > .upper__navigation > p a{
+    color: #000;
+}
+
+.nav__btns {
+    margin-left: 100px;
+    display: flex;
+}
 
 .nav__btns button:first-child{
     width: 127px;
@@ -82,9 +87,9 @@ nav > .navigation {
     border-radius: 30px;
     outline: none;
     cursor: pointer;
-    background-color: transparent;  
+    background-color: transparent;
     margin: 0 20px;
-} 
+}
 
 .nav__btns button:last-child {
     width: 180px;
@@ -93,26 +98,31 @@ nav > .navigation {
     border-radius: 30px;
     outline: none;
     cursor: pointer;
-    background-color: #BC2222;
+    background-color: #a1a77c;
     color: #fff;
+    transition:all 0.25s ease-in-out;
+}
+
+.nav__btns button:last-child:hover {
+    background: #bc2222;
 }
 
 .down__navigation {
     height: 50%;
-    width: 70%;
+    width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-left: 15px;
 }
 
 .down__navigation > ul {
-    width: 100%;
+    height: 50px;
+    width: 500px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.down__navigation ul li a {
+.down__navigation > ul > li > a {
     color: #000;
     font-size: 14px;
 }
@@ -185,9 +195,14 @@ textarea {
     color: #fff;
     font-family: 'raleway';
     font-size: 24px;
-    background-color: #BC2222;
+    background-color: #A1A77C;
     border-radius: 30px;
     cursor: pointer;
+    transition: .25s ease-in-out all;
+}
+
+.form__field input[type="submit"]:hover {
+    background: #bc2222;
 }
 
 form button {
@@ -199,6 +214,11 @@ form button {
     font-size: 24px;
     border-radius: 30px;
     cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+form button:hover {
+    background: #A1A77C;
 }
 
 form button a {
